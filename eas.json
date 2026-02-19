@@ -1,0 +1,76 @@
+{
+  "cli": {
+    "version": ">= 14.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "base": {
+      "node": "20.18.0",
+      "env": {
+        "EXPO_PUBLIC_SUPABASE_URL": "db.mkrevmnphqlwlnizanjt.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1rcmV2bW5waHFsd2xuaXphbmp0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE1MDQwMjUsImV4cCI6MjA4NzA4MDAyNX0.KbQDpqT5yw9PdPYRe1dgk5g1YqNYnjDw7jNZ2BP7lAQ"
+      }
+    },
+    "development": {
+      "extends": "base",
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_ENV": "development",
+        "EXPO_PUBLIC_SUPABASE_URL": "db.mkrevmnphqlwlnizanjt.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1rcmV2bW5waHFsd2xuaXphbmp0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE1MDQwMjUsImV4cCI6MjA4NzA4MDAyNX0.KbQDpqT5yw9PdPYRe1dgk5g1YqNYnjDw7jNZ2BP7lAQ"
+      },
+      "android": {
+        "distribution": "internal",
+        "buildType": "apk",
+        "withoutCredentials": true
+      },
+      "ios": {
+        "simulator": true
+      }
+    },
+    "preview": {
+      "extends": "base",
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_ENV": "preview",
+        "EXPO_PUBLIC_SUPABASE_URL": "db.mkrevmnphqlwlnizanjt.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1rcmV2bW5waHFsd2xuaXphbmp0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE1MDQwMjUsImV4cCI6MjA4NzA4MDAyNX0.KbQDpqT5yw9PdPYRe1dgk5g1YqNYnjDw7jNZ2BP7lAQ"
+      },
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "simulator": false
+      }
+    },
+    "production": {
+      "extends": "base",
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_ENV": "production",
+        "EXPO_PUBLIC_SUPABASE_URL": "db.mkrevmnphqlwlnizanjt.supabase.co",
+        "EXPO_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1rcmV2bW5waHFsd2xuaXphbmp0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE1MDQwMjUsImV4cCI6MjA4NzA4MDAyNX0.KbQDpqT5yw9PdPYRe1dgk5g1YqNYnjDw7jNZ2BP7lAQ"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "ios": {
+        "simulator": false
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "YOUR_APPLE_ID",
+        "ascAppId": "YOUR_ASC_APP_ID",
+        "appleTeamId": "YOUR_APPLE_TEAM_ID",
+        "language": "en-US"
+      }
+    }
+  }
+}
